@@ -1,0 +1,5 @@
+Voici les exigences :
+
+    c'est un jeu pour 2 personnes qui utilisent le même ordinateur.
+    le tableau de jeu est affiché chaque fois qu'un joueur place une marque
+    Vous devez demander au joueur la position de son mouvement et ensuite placer la marque sur le tableau

@@ -10,6 +10,7 @@ from IPython.display import clear_output
 
 def affiche_tableau(tableau):
     clear_output()
+    print("Bienvenue dans le jeu du morpion : \n") 
     print('   |   |')
     print(' ' + tableau[7] + ' | ' + tableau[8] + ' | ' + tableau[9])
     print('   |   |')
@@ -21,9 +22,25 @@ def affiche_tableau(tableau):
     print('   |   |')
     print(' ' + tableau[1] + ' | ' + tableau[2] + ' | ' + tableau[3])
     print('   |   |')
+
+affiche_tableau(['','X','X','X','O',' ','O','X','X','X'])
+
+# **2ème étape : Ecrire une fonction qui demande au joueur quelle marque «X» ou «O» il veut utiliser et lui assigner. Pensez à utiliser une boucle *while* pour demander une réponse au joueur jusqu'à obtenir une réponse correcte.**  
+
+def pion_joueur():
     
-affiche_tableau(['sert à rien','','','','','','','','',''])
-  
+    marque = ''
+    while not (marque == 'X' or marque == 'O'):
+        marque = input('Joueur 1: Est-ce que vous voulez jouer X ou O ? ').upper()
+
+    if marque == 'X':
+        return ('X', 'O')
+    else:
+        return ('O', 'X')  
+
+
+
+
 
 import tkinter as Tk
 import time
